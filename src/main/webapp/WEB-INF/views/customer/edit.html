@@ -13,15 +13,34 @@
     <p th:text="${message}"></p>
 </th:block>
 <form th:action="@{/edit-customer}" th:object="${customer}" method="post">
-    <input th:type="hidden" name="id" th:field="*{id}">
+    <label>
+        <input th:type="hidden" name="id" th:field="*{id}">
+    </label>
     <table>
         <tr>
             <td>First name:</td>
-            <td><input type="text" th:field="*{firstName}"/></td>
+            <td><label>
+                <input type="text" th:field="*{firstName}"/>
+            </label></td>
         </tr>
         <tr>
             <td>Last name:</td>
-            <td><input type="text" th:field="*{lastName}"/></td>
+            <td><label>
+                <input type="text" th:field="*{lastName}"/>
+            </label></td>
+        </tr>
+        <tr>
+            <td>Province:</td>
+            <td>
+                <label>
+                    <select name="province">
+                        <option th:each="p : ${provinces}"
+                                th:value="${p.id}"
+                                th:text="${p.name}"></option>
+<!--                                th:selected="(${customer.province.name}) and (${p.id} == *{province.id})"></option>-->
+                    </select>
+                </label>
+            </td>
         </tr>
         <tr>
             <td></td>
