@@ -36,8 +36,8 @@
                     <select name="province">
                         <option th:each="p : ${provinces}"
                                 th:value="${p.id}"
-                                th:text="${p.name}"></option>
-<!--                                th:selected="(${customer.province.name}) and (${p.id} == *{province.id})"></option>-->
+                                th:text="${p.name}"
+                                th:selected="(${customer.province}) and (${p.id} == *{province.id})"></option>
                     </select>
                 </label>
             </td>
