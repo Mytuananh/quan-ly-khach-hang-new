@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create province</title>
+</head>
+<body>
+<h1>Create province</h1>
+<p>
+    <a href="/login">Quay Lai</a>
+</p>
+    <table th:object="${customer}">
+        <tr>
+            <td>FirstName: </td>
+            <td><input type="text" th:field="*{firstName}" readonly/></td>
+        </tr>
+        <tr>
+            <td>LastName: </td>
+            <td><input type="text" th:field="*{lastName}" readonly/></td>
+        </tr>
+        <tr>
+            <td>Province: </td>
+            <td><input type="text" th:field="*{province.name}" readonly/></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -5,6 +5,7 @@
       <map>
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/create.html" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/edit.html" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/list.html" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/province/delete.html" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/province" />
       </map>
     </option>
